@@ -89,6 +89,15 @@ class Mpesan_hr extends CI_Model {
         }
         return $data;
     }
+    function td_get_hari_raya() {
+        $sql = "SELECT * FROM td_pesan_hari_raya ORDER BY id_pesan_hari_raya DESC";
+        $query = $this->db->query($sql);
+        $data = array();
+        if ($query !== FALSE && $query->num_rows() > 0) {
+            $data = $query->result_array();
+        }
+        return $data;
+    }
 
 
 }

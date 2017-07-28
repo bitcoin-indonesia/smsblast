@@ -32,16 +32,7 @@
                     <?php echo $template['sidebarmenu']; ?>
                 </section>
             </aside>
-            <div id="rightcolumn" class="content-wrapper" >
-<!--                <section  class="content-header">
-                    <h1>Pesan
-                        <small>Control panel</small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li class="active">SMS Blast</li>
-                    </ol>
-                </section>  
+            <div id="rightcolumn" class="content-wrapper" > 
              <?php  $admin['datatable'] ?>-->
             </div>
             <div class="control-sidebar-bg"></div>

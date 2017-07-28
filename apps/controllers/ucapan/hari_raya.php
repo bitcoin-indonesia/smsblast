@@ -14,37 +14,40 @@ class Hari_raya extends CI_Controller {
         
 	public function index()
 	{
-                $a = array();
-                $a['html']['css'] = add_css('/bootstrap/css/bootstrap.min.css');
-                $a['html']['css'] .= add_css('/bootstrap/css/font-awesome.min.css');
-                $a['html']['css'] .= add_css('/bootstrap/css/ionicons.min.css');
-                $a['html']['css'] .= add_css('/dist/css/AdminLTE.min.css');
-                $a['html']['css'] .= add_css('/dist/css/skins/_all-skins.min.css');
-                $a['html']['css'] .= add_css('/plugins/datatables/dataTables.bootstrap.css');
-                $a['html']['css'] .= add_css('/bootstrap/css/bootstrap-datepicker3.min.css');
-
-                $a['html']['js'] = add_js('/plugins/jQuery/jQuery-2.2.0.min.js');
-                $a['html']['js'] .= add_js('/bootstrap/js/jquery-ui.min.js');
-                $a['html']['js'] .= add_js('/bootstrap/js/bootstrap.min.js');
-                $a['html']['js'] .= add_js('/plugins/datatables/jquery.dataTables.min.js');
-                $a['html']['js'] .= add_js('/plugins/datatables/dataTables.bootstrap.min.js');
-                $a['html']['js'] .= add_js('/plugins/slimScroll/jquery.slimscroll.min.js');
-                $a['html']['js'] .= add_js('/plugins/fastclick/fastclick.js');
-                $a['html']['js'] .= add_js('/dist/js/app.min.js');
-                $a['html']['js'] .= add_js('/dist/js/demo.js');
-                $a['html']['js'] .= add_js('/bootstrap/js/bootstrap-confirm-delete.js');
-                $a['html']['js'] .= add_js('/bootstrap/js/test.js');
-                $a['html']['js'] .= add_js('/bootstrap/js/bootstrap-datepicker.min.js');
-                
-                $a['template']['sidebarmenu'] = $this->load->view('template/vsidebarmenu',$a,true);
-                $a['template']['footer'] = $this->load->view('template/vfooter',NULL,true);
-                $a['template']['header'] = $this->load->view('template/vheader',NULL,true);
-                //$this->load->view('pages/vmodul',$a,FALSE);
-              
+//                $a = array();
+//                $a['html']['css'] = add_css('/bootstrap/css/bootstrap.min.css');
+//                $a['html']['css'] .= add_css('/bootstrap/css/font-awesome.min.css');
+//                $a['html']['css'] .= add_css('/bootstrap/css/ionicons.min.css');
+//                $a['html']['css'] .= add_css('/dist/css/AdminLTE.min.css');
+//                $a['html']['css'] .= add_css('/dist/css/skins/_all-skins.min.css');
+//                $a['html']['css'] .= add_css('/plugins/datatables/dataTables.bootstrap.css');
+//                $a['html']['css'] .= add_css('/bootstrap/css/bootstrap-datepicker3.min.css');
+//
+//                $a['html']['js'] = add_js('/plugins/jQuery/jQuery-2.2.0.min.js');
+//                $a['html']['js'] .= add_js('/bootstrap/js/jquery-ui.min.js');
+//                $a['html']['js'] .= add_js('/bootstrap/js/bootstrap.min.js');
+//                $a['html']['js'] .= add_js('/plugins/datatables/jquery.dataTables.min.js');
+//                $a['html']['js'] .= add_js('/plugins/datatables/dataTables.bootstrap.min.js');
+//                $a['html']['js'] .= add_js('/plugins/slimScroll/jquery.slimscroll.min.js');
+//                $a['html']['js'] .= add_js('/plugins/fastclick/fastclick.js');
+//                $a['html']['js'] .= add_js('/dist/js/app.min.js');
+//                $a['html']['js'] .= add_js('/dist/js/demo.js');
+//                $a['html']['js'] .= add_js('/bootstrap/js/bootstrap-confirm-delete.js');
+//                $a['html']['js'] .= add_js('/bootstrap/js/test.js');
+//                $a['html']['js'] .= add_js('/bootstrap/js/bootstrap-datepicker.min.js');
+//                
+//                $a['template']['sidebarmenu'] = $this->load->view('template/vsidebarmenu',$a,true);
+//                $a['template']['footer'] = $this->load->view('template/vfooter',NULL,true);
+//                $a['template']['header'] = $this->load->view('template/vheader',NULL,true);
+//                //$this->load->view('pages/vmodul',$a,FALSE);
+//              
+//                $t['member'] = $this->mpesan_hr->td_get_member();
+//                $a['admin']['datatable']= $this->load->view('ucapan/hari_raya',$t,true);
+//                
+//                $this->load->view('pages/vpesan',$a,FALSE);
+                $t['list'] = $this->mpesan_hr->td_get_hari_raya();
                 $t['member'] = $this->mpesan_hr->td_get_member();
-                $a['admin']['datatable']= $this->load->view('ucapan/hari_raya',$t,true);
-                
-                $this->load->view('pages/vpesan',$a,FALSE);
+                $this->load->view('pages/vhari_raya',$t);
 	}
 	
         public function ajax_list()

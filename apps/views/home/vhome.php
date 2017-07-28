@@ -30,6 +30,8 @@
                     }
                 });
             }, 5000);
+            
+            
         </script>
     </head>
     <body class="transition skin-blue " >
@@ -282,9 +284,6 @@
         <?php echo $template['footer'] ?>
         </div>
         <?php echo $html['js']; ?>
-        
-
-        
         <script>$(function () {
                 'use strict';
                 var salesChartCanvas = $("#salesChart").get(0).getContext("2d");
@@ -525,7 +524,7 @@
                 });
             });
 
-
+            
         </script>
         
     </body>
