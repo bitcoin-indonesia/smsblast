@@ -1214,7 +1214,6 @@
             {
                 $('[name="id_pesan_hari_raya"]').val(data.id_pesan_hari_raya);
                 $('[name="isi_pesan"]').val(data.isi_pesan);
-                $('[name="agama"]').val(data.agama);
                 $('[name="jenis_hari_raya"]').val(data.jenis_hari_raya);
                 $('[name="tanggal_hari_raya"]').val(data.tanggal_hari_raya);
                 $('#modal_form').modal('show');

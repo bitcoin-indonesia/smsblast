@@ -830,4 +830,76 @@ class Admin_log extends CI_Model {
         return TRUE;
     }
     
+    function log_add_hari_raya() {
+          $this->load->library('user_agent');
+        if ($this->agent->is_browser())
+        {
+                $agent = $this->agent->browser().' '.$this->agent->version();
+        }
+        elseif ($this->agent->is_robot())
+        {
+                $agent = $this->agent->robot();
+        }
+        elseif ($this->agent->is_mobile())
+        {
+                $agent = $this->agent->mobile();
+        }
+        else
+        {
+                $agent = 'Unidentified User Agent';
+        }
+        $platform= $this->agent->platform();
+        $sql = "INSERT INTO td_admin_log(keterangan,nama_lengkap,ip_address,browser,platform) VALUES ('Add HARI RAYA SMS Blast','".$this->session->userdata['nama_lengkap']."','" . $this->input->ip_address() . "','$agent','$platform.')";
+        $this->db->query($sql);
+        return TRUE;
+    }
+    
+    function log_edit_hari_raya() {
+        $this->load->library('user_agent');
+        if ($this->agent->is_browser())
+        {
+                $agent = $this->agent->browser().' '.$this->agent->version();
+        }
+        elseif ($this->agent->is_robot())
+        {
+                $agent = $this->agent->robot();
+        }
+        elseif ($this->agent->is_mobile())
+        {
+                $agent = $this->agent->mobile();
+        }
+        else
+        {
+            $agent = 'Unidentified User Agent';
+        }
+        $platform= $this->agent->platform();
+        $sql = "INSERT INTO td_admin_log(keterangan,nama_lengkap,ip_address,browser,platform) VALUES ('Edit HARI RAYA SMS Blast','".$this->session->userdata['nama_lengkap']."','" . $this->input->ip_address() . "','$agent','$platform.')";
+        $this->db->query($sql);
+        return TRUE;
+    }
+    
+     function log_delete_hari_raya() {
+        $this->load->library('user_agent');
+        if ($this->agent->is_browser())
+        {
+                $agent = $this->agent->browser().' '.$this->agent->version();
+        }
+        elseif ($this->agent->is_robot())
+        {
+                $agent = $this->agent->robot();
+        }
+        elseif ($this->agent->is_mobile())
+        {
+                $agent = $this->agent->mobile();
+        }
+        else
+        {
+            $agent = 'Unidentified User Agent';
+        }
+        $platform= $this->agent->platform();
+        $sql = "INSERT INTO td_admin_log(keterangan,nama_lengkap,ip_address,browser,platform) VALUES ('Delete HARI RAYA SMS Blast','".$this->session->userdata['nama_lengkap']."','" . $this->input->ip_address() . "','$agent','$platform.')";
+        $this->db->query($sql);
+        return TRUE;
+    }
+    
 }

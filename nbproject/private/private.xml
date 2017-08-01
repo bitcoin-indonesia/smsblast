@@ -3,15 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/controllers/billing/payment.php</file>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/views/template/vheader.php</file>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/controllers/claim/pending.php</file>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/controllers/claim/payment.php</file>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/views/template/vsidebarmenu.php</file>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/views/pages/vclaim_pay.php</file>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/views/pages/vclaim_pending.php</file>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/views/claim/pending.php</file>
-            <file>file:/C:/xampp/htdocs/smsblas/apps/views/claim/payment.php</file>
+            <file>file:/C:/xampp/htdocs/smsblas/apps/models/admin_log.php</file>
+            <file>file:/C:/xampp/htdocs/smsblas/apps/controllers/ucapan/hari_raya.php</file>
+            <file>file:/C:/xampp/htdocs/smsblas/apps/controllers/ucapan/ultah.php</file>
         </group>
     </open-files>
 </project-private>

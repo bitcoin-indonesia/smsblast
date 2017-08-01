@@ -18,7 +18,6 @@
             <thead>
                 <tr>
                     <th>Isi pesan</th>
-                    <th>Agama</th>
                     <th>Hari Raya</th>
                     <th>Tanggal</th>
                     <th style="width:130px;">Action</th>
@@ -30,7 +29,6 @@
                     ?>
                     <tr>
                         <td><?php echo str_replace("[1]", $member[0]['nama'], $list[$i]['isi_pesan']) ?></td>
-                        <td><?php echo $list[$i]['agama'] ?></td>
                         <td><?php echo $list[$i]['jenis_hari_raya'] ?></td>
                         <td><?php echo $list[$i]['tanggal_hari_raya'] ?></td>
                         <td>
@@ -65,19 +63,7 @@
                                 <input class="form-control docs-date" placeholder="Pilih Tanggal"  name="tanggal_hari_raya">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Agama</label>
-                            <div class="col-md-9">
-                                <select name="agama" class="form-control">
-                                    <option value="">--Pilih--</option>
-                                    <option value="kristen">Kristen</option>
-                                    <option value="katolik">Katolik</option>
-                                    <option value="islam">Islam</option>
-                                    <option value="Budha">Budha</option>
-                                    <option value="Hindu">Hindu</option>
-                                </select>  
-                            </div>
-                        </div> 
+                     
                         <div class="form-group">
                             <label class="control-label col-md-3">Jenis Hari Raya</label>
                             <div class="col-md-9">
